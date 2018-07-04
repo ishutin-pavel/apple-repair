@@ -1,0 +1,423 @@
+*{ outline:none; }
+
+.anchor { display: block; position: relative; top: -10px; visibility: hidden; }
+
+body {
+  background-color: #fff;
+}
+
+img { max-width: 100%; }
+
+
+/* Main menu */
+.admin-bar .fixed-top {
+  top: 32px;
+}
+.site-content { margin-top: 56px; }
+
+.navbar-brand {
+  color: #fff;
+  margin-right: 2rem;
+  &:hover { color: #fff; }
+}
+
+.custom-logo {
+  display: inline-block;
+  height: 46px;
+  margin-right: 15px;
+}
+
+.primary-menu__bg { background: #0d151d; }
+
+.primary-menu {
+  .current-menu-item .nav-link,
+  .menu-item:hover { background-color: #112840; }
+}
+
+@media only screen and (min-width : 992px) {
+  .site-header .navbar { padding: 0 1rem; }
+  .navbar .primary-menu .nav-link { padding: 1rem 1.5rem; }
+  .primary-menu > li {
+      border-left: 1px solid #203040;
+      &:last-child { border-right: 1px solid #203040; }
+    }
+
+}
+
+@media (max-width: 767.98px) {
+  .navbar-nav .nav-link { padding-left: 10px; }
+}
+
+.nav-link { color: #fff !important; }
+
+.navbar-phone__wrap {}
+
+.navbar-phone__link {
+  color: #fff;
+  &:hover { color: #fff; text-decoration: none; }
+}
+
+@media only screen and (max-width : 443px) {
+  .navbar-phone__wrap { display: none; }
+}
+
+/* End Main menu */
+
+.breadcrumbs {
+  padding-top: 1rem;
+  background: transparent;
+}
+
+.entry-title { text-align: center; }
+
+
+/* Первый блок на главной */
+.advantages {
+  color: #fff;
+  list-style: none;
+  font-size: 1.4em;
+}
+
+.b1_order {
+  border: 2px solid #fff;
+  padding: 15px;
+}
+.b1_order__title {
+  text-align: center;
+  color: #fff;
+}
+
+.b1_order input {
+  line-height: 2.5;
+}
+
+
+// Почему на доверяют?
+.why_we { margin-top: 50px; }
+.why_we__heading { text-align: center; }
+.trust__item {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.trust__img-wrap {
+  margin-bottom: 15px;
+  img {
+    max-width: 60px !important;
+  }
+}
+
+.trust__title {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin: 0 0 15px;
+}
+
+.trust__text {
+  text-align: center;
+}
+
+// Блок заявка на ремонт
+.order {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f5f5f5;
+}
+
+.bg-grad {
+  background: #fafafa;
+  background: -moz-linear-gradient(top, #F5F5F5 0%, #ffffff 30%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F5F5F5 ), color-stop(30%,#ffffff), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top, #F5F5F5 0%,#ffffff 30%,#ffffff 100%);
+  background: -o-linear-gradient(top, #F5F5F5 0%,#ffffff 30%,#ffffff 100%);
+  background: -ms-linear-gradient(top, #F5F5F5 0%,#ffffff 30%,#ffffff 100%);
+  background: linear-gradient(to bottom, #F5F5F5 0%,#ffffff 30%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F5F5F5 ', endColorstr='#ffffff',GradientType=0 );
+}
+
+.order__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 40px;
+  span { color: red; }
+}
+
+.order__description {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.order-form {
+  input, textarea {
+    width: 100%;
+    padding-left: 7px;
+    border-radius: 3px;
+    border: 1px solid gray;
+  }
+  .message { text-align: center; }
+}
+
+.order-form__message {}
+
+.order-form__item {
+  margin-top: 1.2em;
+}
+
+#order-form__phone {}
+
+.order-form__submit {
+  display: block;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#yandex-map {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+[class*="ymaps-2"][class*="-ground-pane"] {
+    filter: url("data:image/svg+xml;utf8,#grayscale");
+    /* Firefox 3.5+ */
+    -webkit-filter: grayscale(100%);
+    /* Chrome 19+ & Safari 6+ */
+}
+
+.map__wrap {
+  position: absolute;
+  margin: 76px 0;
+  padding: 30px;
+  background-color: white;
+  max-width: 450px;
+  background-color: white;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+  z-index: 3;
+}
+
+.map__item {
+  margin-bottom: 25px;
+  &:last-child { margin-bottom: 0; }
+}
+
+.map__icon {
+  display: inline-block;
+  margin-right: 15px;
+  min-width: 45px;
+  text-align: center;
+  .fa {
+    font-size: 36px;
+    color: #0d151d;
+  }
+}
+
+.map__text {
+  display: inline-block;
+}
+
+.map__title { font-weight: bold; color: #0d151d; }
+
+.map__desc { max-width: 300px; }
+
+@media only screen and (max-width : 768px) {
+  .map__wrap { display: none; }
+}
+
+
+/* Repair Carousel */
+.your-model { font-size: 1.5rem; }
+
+.owl-carousel {
+  margin-top: 20px;
+  position: relative;
+}
+
+//Навигация
+.owl-prev, .owl-next {
+  &:focus { outline: none; }
+}
+
+//Конец навигации слайдера
+
+.repair-carousel__item {
+ text-align: center;
+}
+
+.repair-carousel__title {
+  margin-top: 5px;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+}
+
+.r1__img {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 200px;
+}
+
+.problem {
+  margin-top: 50px;
+}
+
+.problem__title { text-align: center; margin-bottom: 25px; }
+
+.problem__img {
+  display: inline-block;
+  margin-right: 5px;
+  width: 26px;
+  height: 26px;
+}
+
+.problem__item { margin-bottom: 15px; }
+
+
+
+/* Price List */
+
+/* Single поломки */
+.polomki_single__img {
+  margin-top: 50px;
+  text-align: center;
+  img { height: 65px; width: 65px; }
+}
+.price__item * { transition: .2s linear; }
+
+.price__item {
+  margin-bottom: 5px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #d7d8d9;
+  &:hover { color: #00408a; }
+  &:last-child { border-bottom: none; }
+}
+
+
+.price__title {
+  float: left;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.4em;
+  margin-bottom: 0.385em;
+  margin-top: 13px;
+}
+
+.price__value {
+  float: right;
+  text-align: right;
+}
+
+.price__rur {
+  font-size: 1em;
+  font-weight: 500;
+  padding: 1px 3px;
+  border: 1px solid transparent;
+}
+.price__item:hover .price__rur { border: 1px solid #00408a; }
+
+
+.price__time {
+  font-size: .8em;
+  color: #5f6469;
+  padding: 1px 3px;
+}
+
+
+/*Single device*/
+.single_device__b1 {}
+.single_device__b1 .wpb_content_element {margin-bottom:0;}
+/* Footer */
+.site-footer {
+  padding: 25px 0;
+  background-color: #0d151d;
+  color: #fff;
+
+  a {
+    &:link { color: #fff; text-decoration: none; }
+    &:visited { color: #fff; text-decoration: none; }
+    &:hover { color: #fff; text-decoration: none; }
+    &:active { color: #fff; text-decoration: none; }
+  }
+}
+
+.footer-menu { margin: auto; }
+.site-info { text-align: center; }
+/* End Footer */
+
+
+/* Прайс на странице устройства */
+.service__item {
+  margin-bottom: 35px;
+}
+
+.service__title {
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  border-bottom: 1px solid #d7d8d9;
+}
+
+.service__item:hover img {
+  opacity: 1;
+  filter: none;
+  -webkit-filter: none;
+}
+
+.service__item:hover .service__name,
+.service__item:hover .service__rur
+ {
+  color: #007bff
+}
+
+.service__icons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service__icons img {
+  width: 26px;
+  height: 26px;
+  margin: 0 5px 5px 0;
+  opacity: 0.2;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+
+.service__name {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.4em;
+  margin-bottom: 0.385em;
+}
+
+.service__desc {
+  span { color: red; }
+}
+
+.service__value {
+  float: right;
+  text-align: right;
+}
+
+.service__rur {
+  font-size: 1em;
+  font-weight: 500;
+  padding: 1px 3px;
+  border: 1px solid transparent;
+}
+
+.service__time {
+  font-size: .8em;
+  color: #5f6469;
+  padding: 1px 3px;
+}
+
+@media (max-width: 480px) {
+  .service__item { text-align: center; }
+  .service__value { text-align: center; float: none; }
+}
